@@ -11,4 +11,5 @@ and they're not supposed to do stuff like this? Either way im leaving it in but 
 adding a date of when the list was created too and not clearing old data every time. This way you could have a history 
 of when you used the script and see what files you haven't done anything with in a while.~~
 Done that now yippee!!
+
 (It's not really that useful, i certainly won't use this script for anything but it's alright for a learning experience.)
