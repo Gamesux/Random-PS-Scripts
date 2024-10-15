@@ -5,7 +5,8 @@ If (Test-Path "$csvfile") {                                                     
         foreach ($file in $documentfiles) {
             $filename = $file.Name 
             $filesize = $file.Length
-            Add-Content $csvfile "$filename;$filesize"                 #The name and filesize of each file is added to the above listed collumns
+            $kbsize = "{0:N2} KB" -f ($filesize/1KB)
+            Add-Content $csvfile "$filename;$kbsize"                 #The name and filesize of each file is added to the above listed collumns
             }
 }else {
             New-item -Path "$csvfile"                                  #If the check from Line 5 returns FALSE then the csv file is created
@@ -13,6 +14,7 @@ If (Test-Path "$csvfile") {                                                     
                 foreach ($file in $documentfiles) {
                     $filename = $file.Name
                     $filesize = $file.Length
-                    Add-Content $csvfile "$filename;$filesize"
+                    $kbsize = "{0:N2} KB" -f ($filesize/1KB)
+                    Add-Content $csvfile "$filename;$kbsize"
                     }
             }
