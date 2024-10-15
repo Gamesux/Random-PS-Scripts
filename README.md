@@ -13,3 +13,6 @@ of when you used the script and see what files you haven't done anything with in
 Done that now yippee!!
 
 (It's not really that useful, i certainly won't use this script for anything but it's alright for a learning experience.)
+
+# Filesizes
+This script is essentially just the previous one except edited to list all the files inside a given folder alongside their filesizes. The function to empty the previous data instead of making a continuous list with a date attached is making a return here. (Just get windirstat, i just made this cuz i was once again bored and wanted to visualize my files sizes with a graph in excel)
