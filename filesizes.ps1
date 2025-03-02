@@ -1,5 +1,5 @@
-﻿$documentfiles = Get-Childitem "C:\Users\Johanna\Documents\" | Where { $_.PsIsContainer -ne $true } 
-$csvfile = "C:\Users\Johanna\Documents\filesizes.csv"        #Path for csv file is attached to a variable 
+﻿$documentfiles = Get-Childitem "C:\Users\Monika\Documents\" | Where { $_.PsIsContainer -ne $true } 
+$csvfile = "C:\Users\Monika\Documents\filesizes.csv"        #Path for csv file is attached to a variable 
 If (Test-Path "$csvfile") {                                                       #check if the file above exists
       Set-Content $csvfile "Filename;Filesize (KB)"                               #Old Data is removed from the file
         foreach ($file in $documentfiles) {
