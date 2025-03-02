@@ -1,7 +1,7 @@
-$folderdates = Get-Childitem "C:\Users\Johanna\Documents\" | Where { $_.PsIsContainer -ne $true } | Sort-Object -Property LastWriteTime    #Files that arent folders are sorted by their last write time
+$folderdates = Get-Childitem "C:\Users\Monika\Documents\" | Where { $_.PsIsContainer -ne $true } | Sort-Object -Property LastWriteTime    #Files that arent folders are sorted by their last write time
 #$arrayname = @()   !From old code!
 #$arraydate = @()   !From old code!
-$csvfile = "C:\Users\Johanna\Documents\lastwritedate.csv"                 #Path for csv file is attached to a variable
+$csvfile = "C:\Users\Monika\Documents\lastwritedate.csv"                 #Path for csv file is attached to a variable
 $currentdate = Get-Date -Format "dd-MM-yyyy"							#Adding Variable for date
 $currenttime = Get-Date -Format "hh:mm"								#Adding variable for time
 If (Test-Path "$csvfile") {                                                           #check if the file above exists
